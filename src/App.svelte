@@ -22,8 +22,10 @@
 </main>
 
 <style>
-  :root {
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen,
-      Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-  }
+    :root {
+        --accent-bg-color: blue;
+        --accent-text-color: white;
+
+        font-family:  Roboto, sans-serif;
+    }
 </style>

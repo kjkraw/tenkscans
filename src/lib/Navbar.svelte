@@ -1,8 +1,13 @@
-<script></script>
+<script>
+  let screenWidth;
+  $: hidden = screenWidth <= 480;
+</script>
+
+<svelte:window bind:innerWidth={screenWidth}/>
 
 <nav>
   <a href="/">tenkscans.com</a>
-  <ul>
+  <ul class:hidden={hidden}>
     <a href="#">Log In</a>
   </ul>
 </nav>
@@ -16,31 +21,38 @@
 
         width: 100%;
         max-width: 100%;
-        padding: 0.5rem 1rem;
+        padding: 0.5rem 1rem 0.25rem 1rem;
 
         flex-direction: column;
         gap: 1rem;
 
-        background-color: blue;
+        background-color: var(--accent-bg-color);
     }
 
     a {
-        color: white;
+        color: var(--accent-text-color);
         text-decoration: none;
     }
 
     nav a {
         font-size: 2rem;
+        font-variant-caps: unicase;
     }
 
     ul {
         display: flex;
         flex-direction: column;
         padding: 0;
+        margin: 0;
+    }
+
+    ul.hidden {
+        display: none;
     }
 
     ul a {
         font-size: 1.25rem;
+        font-variant-caps: normal;
     }
 
 
@@ -60,7 +72,7 @@
             flex-direction: row;
             align-items: baseline;
             justify-content: end;
-            gap: 1rem;
+            row-gap: 1rem;
         }
 
         ul a {
