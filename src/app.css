@@ -1,12 +1,16 @@
 :root {
-    --primary-color-bg: blue;
-    --primary-color-text: white;
+    --theme-black: #0B0C10;
+    --theme-gray: #1F2833;
+    --theme-dark-gray: #C5C6C7;
+    --theme-light-blue: #66FCF1;
+    --theme-blue: #45A29E;
 
     font-family: Roboto, "sans-serif";
 }
 
 body {
     margin: 0;
+    background-color: var(--theme-gray);
 }
 
 .hidden {

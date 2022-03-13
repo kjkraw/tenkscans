@@ -30,7 +30,7 @@
         flex-direction: column;
         align-items: baseline;
 
-        background-color: var(--primary-color-bg)
+        background-color: var(--theme-black);
     }
 
     ul {
@@ -41,7 +41,7 @@
     }
 
     a {
-        color: var(--primary-color-text);
+        color: var(--theme-light-blue);
         font-weight: bold;
         font-size: 2.5rem;
         text-decoration: none;
