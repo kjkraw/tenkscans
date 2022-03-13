@@ -26,11 +26,11 @@
         flex-direction: column;
         gap: 1rem;
 
-        background-color: var(--accent-bg-color);
+        background-color: var(--primary-bg-color);
     }
 
     a {
-        color: var(--accent-text-color);
+        color: var(--primary-text-color);
         text-decoration: none;
     }
 

@@ -23,8 +23,8 @@
 
 <style>
     :root {
-        --accent-bg-color: blue;
-        --accent-text-color: white;
+        --primary-bg-color: blue;
+        --primary-text-color: white;
 
         font-family:  Roboto, sans-serif;
     }
