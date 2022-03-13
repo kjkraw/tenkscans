@@ -1,4 +1,14 @@
 :root {
     --primary-color-bg: blue;
     --primary-color-text: white;
+
+    font-family: Roboto, "sans-serif";
+}
+
+body {
+    margin: 0;
+}
+
+.hidden {
+    display: none;
 }
