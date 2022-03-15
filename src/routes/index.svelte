@@ -30,22 +30,19 @@
 
 <style>
     :root {
-        --hero-top: env(safe-area-inset-top);
-        --hero-height: 78%;
-
         --z-index-bg: 1;
         --z-index-hero: 5;
         --z-index-content: 6;
     }
 
     #hero {
-        position: fixed;
-        top: var(--hero-top);
+        position: fixed ;
+        top: 0;
         left: 0;
         z-index: var(--z-index-hero);
-        padding: 5%;
+        padding: 8rem 5%;
 
-        height: var(--hero-height);
+        height: 100%;
         width: 100%;
         box-sizing: border-box;
 
@@ -53,8 +50,8 @@
         flex-direction: column;
 
         align-items: center;
-        justify-content: center;
-        gap: 10rem;
+        justify-content: start;
+        gap: 8rem;
     }
 
     #hero h1 {
@@ -88,7 +85,7 @@
 
     #content {
         position: absolute;
-        top: calc(var(--hero-height) + var(--hero-top));
+        top: 100%;
         z-index: var(--z-index-content);
         width: 100%;
         background-color: var(--theme-black);
@@ -104,6 +101,7 @@
     @media (min-width: 480px) {
         #hero {
             padding: 5%;
+            justify-content: center;
         }
 
         #hero-buttons {
