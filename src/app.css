@@ -5,7 +5,9 @@
     --theme-light-blue: #66FCF1;
     --theme-blue: #45A29E;
 
-    font-family: Roboto, "sans-serif";
+    --z-index-navbar: 10;
+
+    font-family: Arial, Roboto, sans-serif;
 }
 
 body {
